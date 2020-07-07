@@ -17,7 +17,11 @@ const App = () => {
         <NavBar>
           {/* eslint-disable-next-line */}
           <Link to="/">
-            <img src={logo} alt="logo" className="nav-logo" />
+            <img
+              src="http://cosy.la-studioweb.com/wp-content/uploads/2017/04/logo-fashion.png"
+              alt="logo"
+              className="nav-logo"
+            />
           </Link>
           <NavItems />
         </NavBar>

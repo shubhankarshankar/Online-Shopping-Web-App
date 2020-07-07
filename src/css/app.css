@@ -37,7 +37,7 @@ ul {
 }
 
 .nav-logo {
-  width: 25px;
+  margin-top: 4.7%;
 }
 
 .nav-list {
@@ -87,10 +87,44 @@ ul {
   transition: all 0.3s ease;
 }
 
-/* ------------------------- HOME PAGE ----------------- */
+/* ------------------------- HOME PAGE ------------------------- */
 
 /* Featured Space */
-.featured-view {
+.featured-view-wrapper {
   background-color: rgb(247, 247, 247);
   height: 86vh;
+}
+
+.featured-view {
+  color: #343538;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+}
+
+.offer-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hashtag {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 17em;
+  font-style: italic;
+  line-height: 110%;
+}
+
+.tag-line {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 110%;
+  letter-spacing: 2px;
+}
+
+.offer-avail-button {
 }
