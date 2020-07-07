@@ -1,21 +1,33 @@
 import React from "react";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 import "../css/app.css";
 import logo from "../logo.png";
-import NavBar from "./NavBar";
-import NavItems from "./NavItems";
+import NavBar from "./NavBar/NavBar";
+import NavItems from "./NavBar/NavItems";
+import Home from "./home/Home";
+import About from "./about/About";
+import ShoppingBag from "./shoppingBag/ShoppingBag";
+import Wishlist from "./wishlist/Wishlist";
 
 const App = () => {
   return (
-    <div>
-      <NavBar>
-        {/* eslint-disable-next-line */}
-        <a href="#">
-          <img src={logo} alt="logo" className="nav-logo" />
-        </a>
-        <NavItems />
-      </NavBar>
-    </div>
+    <BrowserRouter>
+      <div>
+        <NavBar>
+          {/* eslint-disable-next-line */}
+          <Link to="/">
+            <img src={logo} alt="logo" className="nav-logo" />
+          </Link>
+          <NavItems />
+        </NavBar>
+
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/shopping-bag" component={ShoppingBag} />
+        <Route path="/wishlist" component={Wishlist} />
+      </div>
+    </BrowserRouter>
   );
 };
 
